@@ -113,6 +113,13 @@ fin.desktop.main(function () {
             fin.desktop.Excel.openWorkbook(view.openWorkbookPath.value);
         });
 
+        view.lDebug.addEventListener("click", function (e) {
+            var url = `${location.origin}/excel-api-example/web/book.xlsx`
+            fin.desktop.Excel.openWorkbook(url);
+        });
+
+        
+
         window.addEventListener("keydown", function (event) {
 
             switch (event.keyCode) {
